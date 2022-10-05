@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Selenium Tests</title>
+    <script>
+      function onClick() {
+        setTimeout(() => {
+          const newElement = document.createElement("div");
+          newElement.className = "first_div";
+
+          document.body.appendChild(newElement);
+        }, 5000);
+      }
+    </script>
+  </head>
+  <body>
+    <input name="first_input" />
+    <button id="first_button" onclick="onClick()">
+      Click Me!
+    </button>
+  </body>
+</html>
